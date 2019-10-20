@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Login Form </title>
+<style>
+
+body
+{
+background-image:url(http://blog.bookswagon.com/wp-content/uploads/2018/06/buy-cheap-books-online-in-india.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+.content{
+background :rgba(0,0,0,0.2);
+width:30%;
+padding: 20px;
+margin: 100px auto;
+font-family: calibri;
+}
+h1
+{
+color:#333399;
+}
+form
+{
+border:2px;
+}
+
+input[type=text], input[type=password],input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit]{
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+background-color:#eba834;
+}
+@media screen and (max-width: 600px) {
+  div {
+background-color:#f542aa; 
+   background-repeat: no-repeat;
+background-size: cover;
+color: #1a3300;
+font-family: Arial Black;
+  
+  }
+}
+</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<center>
+<body>
+<div class="content">
+
+    <div class="loginbox">
+    <img src="" class="avatar">
+        <h1>SignUp</h1>
+        <form>
+<p><h3>Please fill in this form to create an account.</h3></p>
+<hr>
+  <label for="usrname"><h2>Username</h2></label>
+    <input type="text" id="usrname" name="usrname"placeholder="Enter Username" required>
+
+    <label for="psw"><h2>Password</h2></label>
+  <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password"required>
+
+ <label for="email"><h2>Email</h2></label>
+ <input type="email" pattern=".+@gmail.com" name="email" placeholder="Enter Email"required>
+
+<input type="submit" name="submit" value="submit">
+        </form>
+        
+    </div>
+</div>
+
+</body>
+</center>
+</head>
+</html>
